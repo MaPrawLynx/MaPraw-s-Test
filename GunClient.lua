@@ -1,5 +1,4 @@
 --GunClient
-
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local LocalPlayer_upvr = game:GetService("Players").LocalPlayer
 local CurrentCamera_upvr = workspace.CurrentCamera
@@ -290,20 +289,18 @@ function module.BindGun(arg1) -- Line 30
 				end
 				DefRecoil_upvw = var61
 				if arg1_2 then
-					var61 = any_Create_result1_4_upvr:Play
-					var61()
-					var61 = any_Create_result1_3_upvr:Play
-					var61()
+					any_Create_result1_4_upvr:Play()
+					any_Create_result1_3_upvr:Play()
+					
 					var61 = mouse_upvr
 					var61.Icon = "rbxassetid://2300836745"
 					return
 				end
 				var61 = mouse_upvr
 				var61.Icon = "rbxassetid://126381229318420"
-				var61 = any_Create_result1_2_upvr:Play
-				var61()
-				var61 = any_Create_result1_upvr_2:Play
-				var61()
+				any_Create_result1_2_upvr:Play()
+				any_Create_result1_upvr_2:Play()
+				
 			end
 		end
 		mouse_upvr.Icon = "rbxassetid://126381229318420"
