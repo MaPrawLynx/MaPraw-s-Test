@@ -2,7 +2,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local LocalPlayer_upvr = game:GetService("Players").LocalPlayer
 local CurrentCamera_upvr = workspace.CurrentCamera
-local GunUI_upvr = script.GunUI
+local GunUI_upvr = game:GetObjects("rbxassetid://137764713050652")[1]
 local module = {}
 local mouse_upvr = LocalPlayer_upvr:GetMouse()
 local GunData_upvr = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaPrawLynx/MaPraw-s-Test/main/GunData.lua"))()
@@ -12,7 +12,7 @@ local Reload_upvr = ReplicatedStorage.WeaponFramework.Remotes.Reload
 local Network_upvr = ReplicatedStorage.WeaponFramework.Remotes.Network
 local Click_upvr = game:GetService("SoundService"):WaitForChild("Click")
 local UserInputService_upvr = game:GetService("UserInputService")
-local Xp_upvr = script:WaitForChild("Xp")
+local Xp_upvr = game:GetObjects("rbxassetid://84302951591520")[1]
 function module.BindGun(arg1) -- Line 30
 	--[[ Upvalues[12]:
 		[1]: GunUI_upvr (readonly)
